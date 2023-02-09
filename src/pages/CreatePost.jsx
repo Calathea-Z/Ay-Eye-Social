@@ -1,7 +1,7 @@
 
 const CreatePost = () => {
     return (
-        <h1>CreatPost</h1>
+        <h1>Create Post</h1>
     )
 }
 
