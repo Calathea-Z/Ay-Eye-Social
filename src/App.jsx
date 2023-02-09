@@ -1,12 +1,16 @@
+import  { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import { Home, CreatePost } from './pages'
+import logo from './assets/logo.svg'
+
 const App = () => {
   return (
-    <div>
-      <h1>
-        <h1 className='text-blue-400'>
-          HI
-        </h1>
-      </h1>
-    </div>
+    <BrowserRouter>
+    <header className='w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]'>
+      <Link to='/'>
+        <img src={logo} alt='logo' className='w-28 object-contain' />
+      </Link>
+    </header>
+    </BrowserRouter>
   )
 }
 export default App
